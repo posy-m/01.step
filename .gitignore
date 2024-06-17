@@ -1,0 +1,7 @@
+계산기/
+node_modules
+package-lock.json
+package.json
+.package-lock.json
+tsc
+tsserver
