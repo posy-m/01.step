@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <!-- 선생님이 주신 스크립트 -->
+  <script src="https://unpkg.com/axios/dist/axios.min.js"></script>
+</head>
+
+<body>
+  <div>메인 페이지</div>
+  <img src="" alt="">
+  <input type="text" id="imgs">
+  <input type="file" id="file">
+  <button id="uploadBtn">전송</button>
+</body>
+
+<script>
+  uploadBtn.onclick = () => {
+    const form = new FormData();
+    form.append("img", imgs.value)
+    form.append("upload", file.files[0])
+    axios.post("http://127.0.0.1:4000/login", { uid: 1, upw: 2 },
+      {}).then((e) => {
+        console.log(e.data);
+      })
+  }
+</script>
+
+</html>
