@@ -6,6 +6,7 @@ require("dotenv").config()
 
 
 
+// 10번도 많이 한거임 더 높은 숫자를 하면 로딩이 오래걸림
 const createHash = (pw) => {
   return new Promise((res, rej) => {
     bcrypt.hash(pw, 10, (err, data) => {

@@ -1,0 +1,30 @@
+SHOW DATABASE;
+
+DROP DATABASE GOGO;
+
+USE GOGO;
+
+CREATE TABLE store ( 
+
+  user_id VARCHAR(20) PRIMARY KEY,
+  user_pw VARCHAR(20) NOT NULL,
+  gender CHAR(4) DEFAULT "남자",
+  date DATETIME DEFAULT now()
+)
+;
+
+DESC store;
+
+SELECT * FROM user
+
+CREATE TABLE user (
+    uid VARCHAR(20) PRIMARY KEY,
+    upw VARCHAR(20),
+    date DEFAULT Date.now ()
+)
+
+CREATE TABLE user (
+    uid VARCHAR(20) PRIMARY KEY,
+    upw VARCHAR(20),
+    date DATE DEFAULT TIMESTAMP
+)

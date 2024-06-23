@@ -38,17 +38,23 @@ const user = {
     }
   },
 
+  // 입력 받은값
   login: async (uid, upw) => {
     try {
       const [[data]] = await user.userinfo(uid);
+      // 객체의 값을 키의 값을 변수에 할당, 복사개념 x
+      // 데이터베이스에 있는 값
       const { uid: uid_id, upw: upw_pw } = data
       const compareCheck = await compare(upw, upw_pw);
+      // 회원가입 된 아이디가 있는지 작성한거랑 비교
       return ((uid === uid_id) && (compareCheck))
     } catch (error) {
     }
   }
 }
 
+// bcrypt 내용
+// 복호화
 const compare = (pw, hash) => {
   return new Promise((res, rej) => {
     bcrypt.compare(pw, hash, (err, same) => {
