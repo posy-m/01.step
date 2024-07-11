@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>로그인페이지</title>
+  <link rel="stylesheet" href="../css/signup.css">
+  <link rel="stylesheet" href="../css/font.css">
+  <link rel="stylesheet" href="../css/headFooter.css">
+
+</head>
+
+<body>
+
+  <!-- header -->
+  <section class="hearder-box">
+    <div class="hearder-wrap">
+      <a href="../html/mainpage.html"><img src="../img/apple.png" width="25" alt=""></a>
+      <span class="hearder-text">Product</span>
+      <span class="hearder-text">Product</span>
+      <span class="hearder-text">Product</span>
+      <span class="hearder-text">고객지원</span>
+      <span class="hearder-text"><a href="../html/signup.html">회원가입</a></span>
+      <span id="logoutchange" class="hearder-text"> <a href="../html/login.html">log-in</a></span>
+    </div>
+    <div class="photo-line">이거슨 내가 연습하는 BOARD사이트</div>
+  </section>
+
+  <!-- meddle -->
+
+  <form action="" id="signupFormSection">
+    <p id="signupText">신규 회원가입 </p>
+    <!-- <div>
+      <p class="top-text">이메일 주소</p>
+      <input id="emailAdress" class="signup-section-input" type="text">
+      <p id="adress"></p>
+    </div> -->
+    <div id="emailCheckBox">
+      <p class="top-text">이메일 주소</p>
+      <input id="emailAdressCheck" class="signup-section-input" type="text">
+    </div>
+    <div id="">
+      <p class="top-text">비밀번호</p>
+      <input id="password" class="signup-section-input" type="text">
+    </div>
+    <div id="passwordCheckBox">
+      <p class="top-text">비밀번호 확인</p>
+      <input id="passwordCheck" class="signup-section-input" type="text">
+    </div>
+    <div id="nicknameCheckBox">
+      <p class="top-text">닉네임</p>
+      <input id="nickName" class="signup-section-input" type="text">
+      <p id="nicknameText" class="smallText"></p>
+    </div>
+
+    <!-- 성별 -->
+    <div id="signup-gender">
+      <p class="top-text">성별을 선택해주세요</p>
+      <select name="gender" id="genderChoice">
+        <option value="">성별을 선택해주세요</option>
+        <option value="남">남</option>
+        <option value="여">여</option>
+      </select>
+    </div>
+
+    <div id="newsignupBtn">
+      <button id="cancelBtn" class="signup-Btn">취소</button>
+      <button id="createAccoutnBtn" class="signup-Btn" type="button">계정생성</button>
+    </div>
+  </form>
+
+  <!-- footer -->
+  <section id="footerBox">
+    <div id="footerwrap">
+      <p class="footer-text-size">상호 : 용감한 개복치</p>
+      <p class="footer-text-size">대표 : 갱상도 여자</p>
+      <p class="footer-text-size">사업자 등록번호 : 0331-1234-56789</p>
+    </div>
+    <div>
+      <p class="footertext footer-text-size">©2024 minji</p>
+    </div>
+  </section>
+
+
+</body>
+<script src="/src/signup.js"></script>
+<script src="/src/header.js"></script>
+
+</html>

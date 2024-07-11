@@ -1,0 +1,10 @@
+{
+  "include": [
+    "ts/**/*"
+, "src/index.ts", "src/index.ts"  ],
+  "compilerOptions": {
+    "outDir": "./src",
+    "target": "ES6",
+    "removeComments": true
+  }
+}

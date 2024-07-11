@@ -1,0 +1,11 @@
+@font-face {
+  font-family: 'SUITE', sans-serif;
+  font-weight: 300 900;
+  src: url('./SUITE-Variable.woff2') format('woff2-variations');
+}
+
+@font-face {
+  font-family: "Nanum Myeongjo", serif;
+  font-weight: 400;
+  src: url('https://fonts.googleapis.com/css2?family=Nanum+Myeongjo&display=swap');
+}

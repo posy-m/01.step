@@ -1,0 +1,88 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+
+body {
+  font-family: 'SUITE', sans-serif;
+  /* font-family: "Nanum Myeongjo", serif; */
+}
+
+input {
+  padding: 3px 6px;
+}
+
+
+#signupFormSection {
+  margin-top: 120px;
+  width: 600px;
+  height: 600px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 30px;
+  /* 중앙 정렬 */
+  margin-left: auto;
+  margin-right: auto;
+}
+
+#signupText {
+  font-size: 25px;
+  font-weight: 500;
+
+}
+
+#emailCheckBox {
+  margin-top: 30px;
+}
+
+.signup-section-input {
+  width: 384px;
+  height: 38px;
+  outline: none;
+  border: 1px solid;
+}
+
+.smallText {
+  font-size: 13px;
+  margin-top: 5px;
+}
+
+.top-text {
+  margin-bottom: 7px;
+  font-size: 15px;
+}
+
+#signup-gender {
+  width: 400px;
+}
+
+#genderChoice {
+  width: 400px;
+  height: 40px;
+}
+
+select {
+  width: 400px;
+  padding: 5px;
+}
+
+
+.signup-Btn {
+  cursor: pointer;
+  width: 200px;
+  height: 40px;
+  background-color: white;
+  border: 1px solid;
+}
+
+#createAccoutnBtn {
+  background-color: #000;
+  color: #fff;
+}
+
+#newsignupBtn {
+  margin-top: 20px;
+}
