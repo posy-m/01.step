@@ -1,3 +1,4 @@
+import axios from 'axios'
 import React from 'react'
 import { useRef } from 'react'
 import { useEffect } from 'react'
@@ -22,19 +23,28 @@ const Login = () => {
   const loginId = useRef()
   const loginPassword = useRef()
 
-  const loginBtn = () => {
+  const loginBtn = async () => {
     const uid = loginId.current.value
     const upw = loginPassword.current.value
 
+    const response = await axios.post('http://localhost:3000/react/findlogin', { uid, upw })
+    // console.log(response.data);
+
+    if (response.data) {
+      dispatch({ type: "로그인", payload: { uid } });
+      alert("로그인이 되었습니다.")
+      use("/")
+    } else {
+      alert("아이디나 비밀번호를 확인해주세요")
+    }
+
     // 배열
-    const stateUserId = state.user
-    const data = stateUserId.find(e => e.uid === uid && e.upw === upw);
-    if (!data) return alert("아이디나 비밀번호를 확인해주세요");
-    alert("로그인이 되었습니다.")
-    dispatch({ type: "로그인", payload: { uid } })
-    use("/")
-
-
+    // const stateUserId = state.user
+    // const data = stateUserId.find(e => e.uid === uid && e.upw === upw);
+    // if (!data) return alert("아이디나 비밀번호를 확인해주세요");
+    // alert("로그인이 되었습니다.")
+    // dispatch({ type: "로그인", payload: { uid } })
+    // use("/")
   }
 
 

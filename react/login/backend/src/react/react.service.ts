@@ -22,6 +22,12 @@ export class ReactService {
     }
   }
 
+  // 로그인
+  async findId(login: LoginDTO): Promise<Login> {
+    const { name, uid, upw } = login;
+    return await this.LoginModel.findOne({ where: { uid } })
+  }
+
 
 
 

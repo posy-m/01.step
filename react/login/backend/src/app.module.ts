@@ -6,7 +6,7 @@ import { Login } from './react/model/login.model';
 import { ReactModule } from './react/react.module';
 
 @Module({
-  imports: [SequelizeModule.forRoot({
+  imports: [ReactModule, SequelizeModule.forRoot({
     dialect: 'mysql',
     host: "localhost",
     port: 3306,
