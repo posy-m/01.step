@@ -13,12 +13,11 @@ export class ReactService {
   async createlogin(login: LoginDTO): Promise<Login> {
     try {
       const { name, uid, upw } = login;
-      console.log("데이터베이스에 저장할 데이터:", login);
       return this.LoginModel.create({
         name, uid, upw
       });
     } catch (err) {
-      console.error("데이터베이스 저장 중 오류 발생:", err);
+      console.error(err);
     }
   }
 

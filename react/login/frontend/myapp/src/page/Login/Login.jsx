@@ -50,7 +50,7 @@ const Login = () => {
 
   return (
     <LoginDim>
-      <LoginTransparency></LoginTransparency>
+      <LoginTransparency />
       <LoginInputWrap>
         <LoginTitle>로그인</LoginTitle>
         <LoginInput ref={loginId} placeholder='아이디를 입력해주세요' />

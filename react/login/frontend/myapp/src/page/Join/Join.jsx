@@ -23,14 +23,14 @@ const Join = () => {
     const upw = joinpassword.current.value;
 
     dispatch(joinUser({ name, uid, upw }))
-    // dispatch({ type: "회원가입", payload: { name, uid, upw } })
+    // dispatch({ type: "회원가입", payload: { name, uid, upw } })ㄴ
     alert("회원가입이 완료가 됐습니다.")
     use("/login")
   }
 
   return (
     <JoinDim>
-      <Transparency></Transparency>
+      <Transparency />
       <InputWrap>
         <JoinTitle>회원가입</JoinTitle>
         <JoinInput ref={joinName} placeholder='이름을 입력해주세요' />
